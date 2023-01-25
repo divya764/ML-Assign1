@@ -1,0 +1,25 @@
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+print("Length of it_companies:", len(it_companies))
+it_companies.add('Twitter')
+print("After adding another item:",it_companies)
+it_companies.update({'Infosys','Capgemini','Wipro','TCS'})
+print("After adding multiple items:",it_companies)
+it_companies.remove('TCS')
+print("After removing one company:",it_companies)
+it_companies.discard('TCS')
+print("After discarding company:",it_companies)
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+print("Join A and B:", A.union(B))
+print("Intersection of A and B:", A.intersection(B))
+print("Subset of A and B:", A.issubset(B))
+print("Disjoint:", A.isdisjoint(B))
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+print("Converting list to set:", set(age))
+print("Length of set:",len(set(age)))
+print("Length of list:",len(age))
+print("Symmetric diff:",A.symmetric_difference(B))
+A.clear()
+print(A)
+B.clear()
+print(B)

@@ -1,0 +1,15 @@
+import statistics
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+print ("Sorted age:", ages)
+print ("Min:", min(ages))
+print ("Max:", max(ages))
+ages.append(min(ages))
+ages.append(max(ages))
+print ("Added min and max values again:",ages)
+mdn_age = statistics.median(ages)
+print ("Median:", mdn_age)
+average= sum(ages)/len(ages)
+print ("Avg = ", average)
+rng=max(ages)-min(ages)
+print ("Range = ", rng)
